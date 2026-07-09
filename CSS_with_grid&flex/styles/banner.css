@@ -1,5 +1,29 @@
-section div{
+.hero-banner{
     display: flex;
-    justify-content: center;   
-    flex-direction: column;
+    background-color: #dde8c0;
+    padding: 20px;   
+}
+
+.banner-picture{
+    flex: 1;    
+}
+
+.banner-content{
+    flex: 2;
+    align-self: center;
+}
+
+.banner-picture img{
+    width: 100%;
+    height: auto;
+}
+
+.banner_content_button{
+    background-color: #d76e1e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+   
 }
