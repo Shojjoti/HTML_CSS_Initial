@@ -6,6 +6,7 @@
 }
 
 .day-special {
+    /* position: absolute; */
     border: 1px solid black;
     padding: 20px;
     text-align: center;
@@ -13,6 +14,7 @@
 }
 
 .day {
+    position: relative;
     border: 1px solid black;
     padding: 20px;
     text-align: center;
@@ -27,8 +29,36 @@
 }
 
 .day:hover {
-    background-color: rgb(188, 82, 40);
+    position: relative;
+    color: transparent;
+}
+
+.day:hover::after {    
+    content: " Shit! try again?";   
+    color: rgb(130, 22, 22);   
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.day-special:hover {    
+    color: transparent;
+}
+
+.day-special:hover::after {    
+    content: "Love You";
+    font-size: xx-large;
     color: white;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: rgb(255, 42, 0);
+    padding: 30px;
+    border-radius: 5%;
 }
 
 .huhaha {
@@ -39,4 +69,11 @@
 
 .start {
     text-align: center;
+}
+
+.day-name{
+    display: flex;
+    position:static; 
+    text-align: center;
+    padding: 20px;
 }
