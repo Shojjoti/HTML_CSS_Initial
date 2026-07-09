@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+
+    <style>
+        .container div{
+            border: 2px dotted salmon;
+            width: 200px;
+
+            /*  */
+        }
+
+        .container{
+            border: 2px solid rgb(230, 9, 9);
+        }
+
+        /* .bee{
+            position:relative;
+        } */
+
+        /* .bee{
+            position: absolute;
+            top: 0px;
+        } */
+
+        .header{
+            position: sticky;
+            top: 0;
+            background-color: #f8f9fa;
+            padding: 10px;
+        }
+
+        ul{
+            position: fixed; 
+            background-color: #0e65bb;
+            color: white;
+            padding: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+       <h3>CSS Positioning</h3>
+        <p>CSS positioning is a fundamental concept in web design that allows developers to control the placement of elements on a web page. By using different positioning techniques, such as static, relative, absolute, and fixed positioning, designers can create visually appealing layouts and ensure that content is displayed in a way that enhances user experience. Understanding how to effectively use CSS positioning is essential for creating responsive and dynamic web designs that adapt to various screen sizes and devices.</p>
+    </header>
+
+    <main>
+        <ul>
+            <li>Static Positioning</li>
+            <li>Relative Positioning</li>
+            <li>Absolute Positioning</li>
+            <li>Fixed Positioning</li>
+        </ul>
+
+        <div class="container">
+            <div class="panda">
+                <img src="images/panda.jpg" alt="panda">
+            </div>
+            <div class="bee">
+                <img src="images/bee.jpg" alt="bee">
+            </div>
+            <div class="cuteee">
+                <img src="images/cuteee.jpg" alt="cuteee">
+            </div>
+        </div>
+
+
+    </main>
+</body>
+</html>

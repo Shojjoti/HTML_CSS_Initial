@@ -1,0 +1,42 @@
+.container {
+    background-color: rgb(182, 211, 220);
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.day-special {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    /* background-color: rgb(218, 147, 71); */
+}
+
+.day {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+.day:nth-child(7n+2) {
+    background-color: rgb(218, 147, 71);
+}
+
+.day:nth-child(7n+1) {
+    background-color: rgb(218, 147, 71);
+}
+
+.day:hover {
+    background-color: rgb(188, 82, 40);
+    color: white;
+}
+
+.huhaha {
+    color: red;
+    font-style: italic;
+
+}
+
+.start {
+    text-align: center;
+}
